@@ -1,0 +1,265 @@
+.orbitron-font {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron";
+}
+.home{
+  width: 100%;
+  height: 100svh;
+  /* border: 1px solid saddlebrown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-container{
+  width: 70%;
+  /* border: 1px solid blue; */
+  height: 80%;
+  text-align: center;
+}
+.home-container h1{
+  /* font-family: "Orbitron", sans-serif; */
+  font-weight: 400;
+  font-size: 2.6rem;
+  margin: 2.5rem 0 3rem;
+  /* font-style: normal; */
+  line-height: 50.16px;
+}
+.input{
+  display:flex ;
+  margin-bottom: 0.7rem;
+}
+.text, .result-container{
+  width: 60%;
+  border: 1px solid #000;
+  height: 80px;
+
+}
+.result-container{
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+}
+.link, .generate{
+  width: 20%;
+  height: 80px;
+  border: 1px solid #000;
+}
+.dropdown-container{
+  width: 100%;
+}
+.dropdown-trigger, .dropdown-option{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+.dropdown-option{
+  border-bottom: 1px solid white;
+}
+.dropdown-options{
+  background-color: #000;
+  color: #fff;
+}
+.label{
+  margin-right: 1rem;
+}
+.input-text,.generate-btn{
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+}
+.generate-btn{
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.result,.footer{
+  display: flex;
+  justify-content: center;
+}
+.footer-container{
+  width: 50%;
+  /* border: 1px solid green; */
+  margin-top:11.5rem ;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.auth{
+  width: 45%;
+  border: 1px solid #000;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+color: #000;
+}
+
+.auth:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.black{
+  background-color: #000;
+  color: #fff;
+}
+.black:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+/* SIGN UP PAGE */
+.form-container{
+  height: auto;
+}
+.create-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid green; */
+  /* width: 100%; */
+}
+.create-form input::placeholder{
+  color: #000;
+}
+.create-input{
+  height: 60px;
+  margin-bottom: 0.6rem;
+}
+.or{
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.generate-btn span{
+margin-left: 1rem;
+}
+
+
+/* ===============Dashboard =========== */
+.dashboard-container{
+  height: auto ;
+}
+.user{
+  /* border: 1px solid brown; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-container span{
+  display: flex;
+  align-items: center;
+}
+.history{
+  height: auto;
+}
+.url{
+  width: 60%;
+  border: 1px solid #000;
+  height: 80px;
+  font-size: .8rem;
+  text-wrap: wrap;
+}
+.url1{
+  width: 30%;
+
+}
+.download{
+  width: 10%;
+  height: 80px;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.url,.download{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .edit{
+  background-color: #fff;
+  color: #000;
+} */
+.download-img{
+  width: 70px;
+  height: 100%;
+}
+.result-container p{
+  cursor: pointer;
+}
+.qr-container{
+  display: flex;
+  align-items: center;
+  /* padding: 1rem 0; */
+}
+.qr-image{
+  width: 200px;
+  height: 200px;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px){
+  .home-container{
+    width: 80%;
+  }
+  .text, .link, .generate, .auth, .result-container,.url, .download{
+    width: 100%;
+  }
+  .home-container h1{
+    font-size: 1.8rem;
+  }
+  .input{
+    display: block;
+  }
+  .footer-container{
+    display: block;
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .url{
+    height: 100px;
+    font-size: 0.75rem;
+    text-wrap: wrap;
+  }
+}
+  
+@media screen and (max-width: 390px){
+
+  .home-container h1{
+    font-size: 1.5rem;
+  }
+  
+}
+  
+@media screen and (max-width: 840px){
+  .input-small{
+    display: block;
+  }
+  .url, .download{
+    width: 100%;
+  }
+  
+}
